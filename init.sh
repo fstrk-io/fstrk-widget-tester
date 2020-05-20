@@ -15,11 +15,11 @@ sudo cat >index.html <<EOL
         <title>Fstrk.io widget test</title>
     </head>
     <body>
-        <script src="https://ftlp.pw/widget/$FSTRK_WIDGET_TOKEN.js"></script>
+        <script src="https://ftlp.pw/widget/$FSTRK_WIDGET_UUID.js"></script>
         <script>
             ChatWidget({
                 user: {
-                    username: "$FSTRK_USER_NICK_NAME",
+                    username: "$FSTRK_USER_NICKNAME",
                     id: "$FSTRK_USER_ID",
                     firstName: "$FSTRK_USER_FIRST_NAME",
                     lastName: "$FSTRK_USER_LAST_NAME",
@@ -36,4 +36,4 @@ curl https://dashboard.fstrk.io/static/favicon.ico > favicon.ico
 
 # Run dev server at http://0.0.0.0:9000
 # When Ctrl/Cmd+C is pressed, than remove index.html && favicon.ico
-python3 -m http.server $FSTRK_SERVER_PORT && rm -rf index.html favicon.ico
+python3 -m http.server $FSTRK_DEV_SERVER_PORT && rm -rf index.html favicon.ico
