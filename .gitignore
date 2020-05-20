@@ -1,0 +1,16 @@
+# macOS
+.DS_Store
+
+# IDE
+.idea/
+.vscode/
+
+# Cache
+__pycache__/
+
+# Env
+.env
+
+# Output HTML
+*.html
+*.ico
