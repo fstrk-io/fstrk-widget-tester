@@ -1,4 +1,4 @@
 .PHONY: run
 
 run:
-	chmod +x ./init.sh && ./init.sh
+	sudo chmod +x ./init.sh && ./init.sh
